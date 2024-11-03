@@ -1,3 +1,5 @@
 export default {
-    react_logo: require("@/src/assets/images/react-logo.png")
+    logo: require("@/src/assets/images/icon.png"),
+    meta_logo: require("@/src/assets/images/meta.png"),
+    background: require("@/src/assets/images/istockphoto.jpg")
 }
