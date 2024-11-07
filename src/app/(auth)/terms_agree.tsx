@@ -48,9 +48,9 @@ const TermsAgree = () => {
         <View>
           <TouchableOpacity onPress={() => setOpen(true)}>
             <View style={styles.lang_container}>
-              <SimpleLineIcons name="globe" size={22} color={colors.whatsAppGreen} />
+              <Image source={imagePath.globe} style={styles.img}/>
               <Text style={styles.lang}>{value}</Text>
-              <FontAwesome name="angle-down" size={24} color={colors.whatsAppGreen} />
+              <Image source={imagePath.angleDown} style={styles.img}/>
             </View>
           </TouchableOpacity>
           <ScrollView style={open === true ? styles.show : styles.hide}>
@@ -129,6 +129,10 @@ const styles = StyleSheet.create({
     width: 230,
     borderRadius: 230,
     marginBottom: 40,
+  },
+  img:{
+    height:20,
+    width:20
   },
   terms: {
     paddingTop: 15,

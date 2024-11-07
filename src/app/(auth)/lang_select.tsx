@@ -10,7 +10,6 @@ import React, { useState } from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
 import imagePath from "@/src/constants/imagePath";
 import { moderateScale, verticalScale } from "react-native-size-matters";
-import AntDesign from "@expo/vector-icons/AntDesign";
 import colors from "@/src/constants/colors";
 import { router } from "expo-router";
 
@@ -188,7 +187,7 @@ const LanguageSelect = () => {
       </ScrollView>
       <View style={styles.nextArw}>
        <TouchableOpacity onPress={navigate_to_terms}>
-       <AntDesign name="arrowright" size={24} color="white" />
+       <Image source={imagePath.arrowRight} style={styles.arrow}/>
        </TouchableOpacity>
       </View>
     </SafeAreaView>
@@ -253,6 +252,10 @@ const styles = StyleSheet.create({
     backgroundColor: "#0CCC83",
     borderRadius: 50,
   },
+  arrow:{
+    height:25,
+    width:25
+  }
 });
 
 export default LanguageSelect;
